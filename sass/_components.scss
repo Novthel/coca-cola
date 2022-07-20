@@ -7,7 +7,6 @@
 $color-principal:rgb(245, 14, 14);
 $color-secondary: white;
 
-
 .btn-principal {
     @include btn-base();
     background-color: $color-principal;
@@ -69,6 +68,4 @@ $color-secondary: white;
             font-size: 0.8rem;
         }
     }
-    
-
 }

@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto'
 }
 
 .navigate {
@@ -15,6 +15,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: components.$color-secondary;
+
 
     .logo {
         img{
@@ -39,7 +40,7 @@ body {
     background-image: url(../media/bannerprincipal.jpg);
     background-position: center;
     background-size: cover;
-
+  
     .info-principal {
         display: flex;
         flex-direction: column;
@@ -66,7 +67,7 @@ body {
     background-image: url(../media/latas.jpg);
     background-size: cover;
     width: 100%;
-
+  
     .details-text {
         width: 70%;
         p { 
@@ -77,6 +78,7 @@ body {
 }
 
 .services {
+   
     padding: 3rem;
     .grid-service {
         display: flex;
@@ -87,15 +89,15 @@ body {
 }
 
 .sec-imagenes {
+  
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,400px);
-    gap: 0.25rem;
-    justify-content: center;
-    padding: 0 2rem;
-
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: space-around;
+    gap: 1rem;
     .gal-img {
         width: 400px;
+        align-self: center;
         img {
             width: 100%;
             filter: grayscale(1);
@@ -122,30 +124,32 @@ body {
         margin-top: 2%;
         position: absolute;
         background-color: components.$color-principal;
-        padding: 3.5rem;
+        width: 30%;
+        padding: 3rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .form-input {
-            width: 18rem;
+            width: 70%;
             padding: 0.5rem;
             font-size: 1rem;
             margin-bottom: 1rem;
         }
 
         .form-texArea {
-            width: 19rem;
+            width: 74%;
             height: 6rem;
             margin-bottom: 1.2rem;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
     }     
 }
 
 .sec-footer {
+
     display: flex;
     background-color: black;
     justify-content: space-around;
@@ -209,7 +213,6 @@ body {
            margin-right: 5rem;
            
         }
-        
     }
 
     .banner {
@@ -239,6 +242,7 @@ body {
             p { 
                 color: components.$color-secondary;
                 text-align: justify;
+                font-size: 0.8rem;
             }
         }
     }
@@ -246,9 +250,9 @@ body {
 
     .sec-imagenes {
         gap: 1rem;
-        justify-content: center;
         .gal-img {
             width: 300px;
+            margin-left: 3rem;
             img {
                 width: 100%;
                 filter: grayscale(1);
@@ -274,20 +278,28 @@ body {
             height: 50vh;
             left: 60%;
             position: absolute;
-            padding: 2rem;
+            padding: 2.2rem;
 
             .form-input {
                 width: 10rem;
                 padding: 0.3rem;
                 font-size: 0.8rem;
                 margin-bottom: 1rem;
+                background-color: components.$color-secondary;
             }
 
             .form-texArea {
                 width: 10.5rem;
                 height: 10rem;
                 margin-bottom: 1.2rem;
+                font-size: 0.9rem;
+                background-color: components.$color-secondary;
+            }
+
+            .btn-form {
+                padding: 0.5rem 0.9rem;
                 font-size: 0.8rem;
+                font-weight: 300;
             }
 
         }     
@@ -299,7 +311,7 @@ body {
         text-align: center;
     
         .col-logo {
-            width: 12rem;
+            width: 11rem;
             img {
                 width: 10rem;
             }
@@ -310,30 +322,27 @@ body {
         }
         .col-text{
             h3 {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             p{
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
         }
         .col-redes{
             h3 {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             .redes-sociales{
                 display: flex;
                 gap: 1.2rem;
                 i {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                 }
             }
            
         }
-    }
-    
-    
+    } 
 }
-
 
 
 @media (max-width: 600px) {
@@ -397,8 +406,6 @@ body {
     .sec-imagenes {
         gap: 0.25rem;
         justify-content: center;
-     
-    
         .gal-img {
             width: 300px;
             img {
@@ -426,18 +433,18 @@ body {
             padding: 3.5rem;
             background-color: components.$color-principal;
             padding: 1.5rem;
-            margin: 2rem 2rem 0.25rem 2rem;
+            margin: 2rem;
 
             .form-input {
-                width: 12rem;
-                padding: 0.5rem;
+                width: 80%;
+                padding: 0.3rem;
                 font-size: 0.8rem;
                 margin-bottom: 1rem;
             }
-
+    
             .form-texArea {
-                width: 13rem;
-                height: 5rem;
+                width: 84%;
+                height: 6rem;
                 margin-bottom: 1.2rem;
                 font-size: 0.8rem;
             }

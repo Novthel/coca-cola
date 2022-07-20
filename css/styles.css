@@ -143,12 +143,12 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
-  gap: 0.25rem;
-  justify-content: center;
-  padding: 0 2rem;
+  justify-content: space-around;
+  gap: 1rem;
 }
 .sec-imagenes .gal-img {
   width: 400px;
+  align-self: center;
 }
 .sec-imagenes .gal-img img {
   width: 100%;
@@ -173,23 +173,24 @@ body {
   margin-top: 2%;
   position: absolute;
   background-color: rgb(245, 14, 14);
-  padding: 3.5rem;
+  width: 30%;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .contact form .form-input {
-  width: 18rem;
+  width: 70%;
   padding: 0.5rem;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 .contact form .form-texArea {
-  width: 19rem;
+  width: 74%;
   height: 6rem;
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .sec-footer {
@@ -268,13 +269,14 @@ body {
   .details .details-text p {
     color: white;
     text-align: justify;
+    font-size: 0.8rem;
   }
   .sec-imagenes {
     gap: 1rem;
-    justify-content: center;
   }
   .sec-imagenes .gal-img {
     width: 300px;
+    margin-left: 3rem;
   }
   .sec-imagenes .gal-img img {
     width: 100%;
@@ -297,19 +299,26 @@ body {
     height: 50vh;
     left: 60%;
     position: absolute;
-    padding: 2rem;
+    padding: 2.2rem;
   }
   .contact form .form-input {
     width: 10rem;
     padding: 0.3rem;
     font-size: 0.8rem;
     margin-bottom: 1rem;
+    background-color: white;
   }
   .contact form .form-texArea {
     width: 10.5rem;
     height: 10rem;
     margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    background-color: white;
+  }
+  .contact form .btn-form {
+    padding: 0.5rem 0.9rem;
     font-size: 0.8rem;
+    font-weight: 300;
   }
   .sec-footer {
     margin-top: 2rem;
@@ -317,7 +326,7 @@ body {
     text-align: center;
   }
   .sec-footer .col-logo {
-    width: 12rem;
+    width: 11rem;
   }
   .sec-footer .col-logo img {
     width: 10rem;
@@ -326,20 +335,20 @@ body {
     font-size: 0.6rem;
   }
   .sec-footer .col-text h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .sec-footer .col-text p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .sec-footer .col-redes h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .sec-footer .col-redes .redes-sociales {
     display: flex;
     gap: 1.2rem;
   }
   .sec-footer .col-redes .redes-sociales i {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 600px) {
@@ -413,17 +422,17 @@ body {
     padding: 3.5rem;
     background-color: rgb(245, 14, 14);
     padding: 1.5rem;
-    margin: 2rem 2rem 0.25rem 2rem;
+    margin: 2rem;
   }
   .contact form .form-input {
-    width: 12rem;
-    padding: 0.5rem;
+    width: 80%;
+    padding: 0.3rem;
     font-size: 0.8rem;
     margin-bottom: 1rem;
   }
   .contact form .form-texArea {
-    width: 13rem;
-    height: 5rem;
+    width: 84%;
+    height: 6rem;
     margin-bottom: 1.2rem;
     font-size: 0.8rem;
   }
