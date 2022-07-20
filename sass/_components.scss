@@ -1,0 +1,74 @@
+@mixin btn-base(){
+    padding: 0.8rem 1.1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+$color-principal:rgb(245, 14, 14);
+$color-secondary: white;
+
+
+.btn-principal {
+    @include btn-base();
+    background-color: $color-principal;
+    color: $color-secondary;
+    border: none;
+
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
+
+.btn-secondary {
+    @include btn-base();
+    border: 1px red solid;
+    background-color: $color-secondary;
+    color: $color-principal;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-form {
+    @include btn-base();
+    background-color: black;
+    color: $color-secondary;
+}
+
+.main-menu {
+   display: flex;
+   gap: 1rem;
+
+    li {
+        list-style: none;
+        a{
+            color: $color-principal;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+    }
+}
+
+.card-service {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    border: 1px solid rgb(121, 119, 119);
+
+    .img {
+      width: 10%;
+      object-fit: cover;
+    }
+    .card-text {
+        padding: 0.5rem;
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    
+
+}
